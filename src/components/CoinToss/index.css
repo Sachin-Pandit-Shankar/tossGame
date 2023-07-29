@@ -1,121 +1,93 @@
 /* Write your CSS here */
-.app-container {
+.bg-container {
+  background-image: linear-gradient(to left, #e2a139, #f9d423);
   min-height: 100vh;
-  padding: 50px 20px 50px 20px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  background-image: linear-gradient(to right, #f9d423, #e2a139);
+  justify-content: center;
 }
-
-.coin-toss-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 80%;
-  max-width: 500px;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  padding: 20px;
+.white-container {
   background-color: #ffffff;
-}
-
-.header-container {
+  border-radius: 15px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  width: 90%;
+  padding: 30px 60px;
+  margin: 25px;
+}
+@media screen and (max-width: 576px) {
+  .white-container {
+    display: flex;
+    width: fit-content;
+    flex-direction: column;
+    padding: 10px 35px;
+    margin: 30px;
+  }
 }
 
-.game-heading {
-  font-size: 23px;
-  font-weight: 600;
-  font-family: 'Roboto';
-  text-align: center;
+.main-heading {
   color: #a35200;
+  font-family: 'Roboto';
+  font-size: 50px;
+  font-weight: bold;
 }
 
-@media screen and (min-width: 768px) {
-  .game-heading {
+@media screen and (max-width: 576px) {
+  .main-heading {
     font-size: 35px;
   }
 }
 
-.game-sub-heading {
-  font-size: 18px;
-  font-weight: 600;
-  font-family: 'Roboto';
+.top-text {
   color: #334155;
-}
-
-.image-container {
-  width: 90%;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.heads-tails-image {
-  width: 180px;
-  height: 180px;
-  padding: 20px;
-}
-
-.toss-coin-button-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-
-.toss-coin-button {
-  border: none;
-  outline: none;
-  background-image: linear-gradient(to right, #f9d423, #e2a139);
-  padding: 10px 20px 10px 20px;
-  border-width: 0px;
-  width: 160px;
-  border-radius: 10px;
-  color: #ffffff;
+  font-family: 'Roboto';
   font-size: 20px;
-  font-weight: 600;
-  font-family: 'Roboto';
-  cursor: pointer;
+  font-weight: bold;
 }
-
-.scores-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  width: 90%;
-  margin-top: 55px;
-}
-@media screen and (min-width: 500px) {
-  .scores-container {
-    flex-direction: row;
+@media screen and (max-width: 576px) {
+  .top-text {
+    font-size: 25px;
   }
 }
-.total-score-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
 
-.score-status,
-.score-text {
+.coin-image {
+  height: 250px;
+}
+@media screen and (max-width: 576px) {
+  .coin-image {
+    height: 150px;
+  }
+}
+.coin-btn {
+  background-color: #f9d423;
+  color: #a35200;
+  font-family: 'Roboto';
+  border: none;
+  border-radius: 5px;
+  font-weight: 500;
+  padding: 5px 10px;
+  margin-top: 30px;
+}
+.score-card {
+  display: flex;
+  justify-content: space-between;
+  color: #475569;
+  font-family: 'Roboto';
   font-size: 16px;
-  font-weight: 600;
-  font-family: 'Roboto';
-  color: #334155;
+  font-weight: bold;
+  margin-top: 35px;
+  margin-bottom: 40px;
 }
-@media screen and (min-width: 768px) {
-  .score-status,
-  .score-text {
+@media screen and (max-width: 576px) {
+  .score-card {
+    display: flex;
+    flex-direction: column;
     font-size: 18px;
+    margin-bottom: 20px;
   }
+}
+.total-score {
+  margin-right: 20px;
+  margin-left: 20px;
 }
